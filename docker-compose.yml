@@ -1,0 +1,15 @@
+services:
+  db:
+    image: postgres:18
+    container_name: postgres-chefvision
+    environment:
+      POSTGRES_DB: ChefVision_DB
+      POSTGRES_USER: Marcelo
+      POSTGRES_PASSWORD: Marcelo1234
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/18/docker
+
+volumes:
+  pgdata:   

@@ -1,2 +1,8 @@
-h1 
-	a(href='hola' style='margin:center;') tu cola 
+section(class='Cola' style='display:grid;  color:red;grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr 1fr;')
+	h1(style='grid-column-start: 3; ') 
+		a(href='hola' style='color:red;') tu cola 
+form(action="/usr/Create_User", method="post")
+	input(type="email" name="Email" placeholder="Email")
+	input(type="password", name="Password" placeholder="Password")
+	input(type="password", name="Confirm_Password" placeholder="Confirm Pass")
+	input(type="submit", value="submit")
